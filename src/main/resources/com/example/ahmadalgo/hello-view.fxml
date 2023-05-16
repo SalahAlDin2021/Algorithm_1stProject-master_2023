@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmadalgo.HelloController">
+    <children>
+        <Label text="Travel Cost Calculator" />
+        <Button fx:id="loadFileButton" text="Load File" onAction="#loadFile" />
+        <Label text="File Data" />
+        <TextArea fx:id="fileDataTextArea" editable="false" />
+        <HBox spacing="10">
+            <Label text="Start City" />
+            <ComboBox fx:id="startCityCombo" />
+            <Label text="End City" />
+            <ComboBox fx:id="endCityCombo" />
+            <Button fx:id="calculateButton" text="Calculate" onAction="#calculate" />
+        </HBox>
+        <Label text="Result" />
+        <TextArea fx:id="resultTextArea" editable="false" />
+    </children>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+    <spacing>
+        10.0
+    </spacing>
+</VBox>
